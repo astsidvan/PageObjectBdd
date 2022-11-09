@@ -23,7 +23,6 @@ public class TransferCardsTest {
         verificationPage.validVerify(verificationCode);
 
     }
-
     @Test
     void shouldTransferCard() {
         var authInfo = DataHelper.getAuthInfo();
@@ -44,7 +43,6 @@ public class TransferCardsTest {
         Assertions.assertEquals(expectedBalanceCardNumber1, actualBalanceCardNumber1);
         Assertions.assertEquals(expectedBalanceCardNumber2, actualBalanceCardNumber2);
     }
-
     @Test
     void shouldInvalidAmount(){
         var authInfo = DataHelper.getAuthInfo();
